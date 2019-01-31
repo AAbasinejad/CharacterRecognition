@@ -27,5 +27,15 @@ at the end a total of 186120 images for training has been made.
 ### CNN Model
 ------
 To tackle this problem we created a Convolutional Neural Network using the Keras Functional API. Since the task is to predict four different outputs we decide to tackle this problem separetely, hence, we initially create two different branches on our network, these two branches are eventually merged and then split again on two new branches, each branch of the 4 created will predict one of the outputs. The reasons for creating these different branches are: this generates a visually 'complex' model, but each branch is simple on its own, which helps to avoid overfitting, and at the same time we have freedom to tune the best configuration of each branch for each output.<br/>
-Between these four branches, we have four different Network configurations, the idea was to use more complex models to outputs that we judged were more complex, and simpler models for outputs that we judged were simpler. Also, where to place each output was something that we decided observing the results from the Network. You can check the model.png file to visually check the network configuration, as we will not reproduce it here because it is too big.<br/>
+Between these four branches, we have four different Network configurations, the idea was to use more complex models to outputs that we judged were more complex, and simpler models for outputs that we judged were simpler. Also, where to place each output was something that we decided observing the results from the Network. You can check the model.png file to visually check the network configuration.<br/>
+<br/>
 ![alt text](https://github.com/AAbasinejad/CharacterRecognition/blob/master/model.png)
+<br/>
+### Performance
+------
+The final model has the following performance on validation and test:<br/>
+
+|   |**char**|**fonts**|**bold**|**italic**|**average**|
+|---|---|---|---|---|---|
+|accuracy_validation|0.8802|0.6237|0.8615|0.8577|0.795|
+|accuracy_test|0.6260|0.2582|0.7922|0.7398|0.572|

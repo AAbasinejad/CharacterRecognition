@@ -2,8 +2,7 @@
 
 ### Introduction
 ------
-Recognize given a scanned picture with a character through a CNN using Keras' Functional API, moreover we had
-to generate our own dataset to train the Neural Network. The following sections describes the model that was
+Recognize given a scanned picture with a character through a CNN using Keras' Functional API, and generate our own dataset to train the Neural Network. The following sections describes the model that was
 built, the dataset generated and other choices made during development.
 
 
